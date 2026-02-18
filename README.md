@@ -68,22 +68,6 @@ gestion-salles/
 
 ---
 
-## Paramètres JPA
-
-La configuration se trouve dans `src/main/resources/META-INF/persistence.xml`.
-
-```xml
-<property name="javax.persistence.jdbc.url"
-          value="jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1"/>
-<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-<property name="hibernate.show_sql"     value="true"/>
-<property name="hibernate.format_sql"   value="true"/>
-```
-
-Le schéma est recréé à chaque démarrage (`create-drop`), ce qui garantit un environnement propre pour chaque exécution.
-
----
-
 ## 🎬 Démonstration
 
 [![Watch the video](https://img.youtube.com/vi/SWVAMm52ngo/0.jpg)](https://youtu.be/SWVAMm52ngo)
